@@ -17,7 +17,7 @@ body{
 }
 @font-face {
     font-family: 'Inconsolata';
-    src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
+    src: url('./fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
