@@ -1,0 +1,376 @@
+body{
+    min-height: 100vh;
+}
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url('./fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JockeyOne';
+    src: url('./fonts/Jockey_One/JockeyOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*navbar*/
+.navbar{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #A3E221;
+    z-index: +1;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    margin: 20px 0px 20px 30px;
+}
+.logo img{
+    height: 40px;
+}
+.nav-links{ /*ul*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 30px;
+}
+.nav-links li{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #0E1A28;
+    display: block;
+    font-family: Jockey One, sans-serif;
+    font-size: 1.4em;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+/*hero section*/
+.hero{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5FEE3;
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+}
+.hero h1{ /*Greetings!*/
+    font-family: 'Audiowide';
+    font-size: 8em;
+    margin: 0;
+}
+.hero p{/*My name...*/
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.6em;
+    margin: 10px 0 0 0;
+    max-width: 600px;
+}
+.hero-logo{
+    margin-top: 40px;
+    height: 120px;
+}
+
+/*about me section*/
+.aboutme{
+    padding: 120px 30px 0px 30px;
+    text-align: center;
+    color: #F5FEE3;
+}
+.aboutme h2{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 3em;
+    color: #F5FEE3;
+    text-align: left;
+}
+.aboutme-text{
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    color: #F5FEE3;
+    text-align: left;
+    gap: 40px;
+}
+.aboutme-text img{
+    width: auto;
+    height: 240px;
+}
+.aboutme-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.aboutme-skills h3{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.6em;
+    text-align: left;
+}
+.aboutme-skills ul{
+    list-style: none;
+    padding: 0;
+}
+.aboutme-skills li{
+    font-family: 'Inconsolata', monospace;
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 1.2em;
+}
+.language-list img{
+    width: 240px;
+    height: auto;
+    margin-right: 10px;
+}
+.software-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.software-list img{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+.traits-list li{
+    text-align: left;
+    margin-bottom: 32px;
+}
+.aboutme-photo {
+    width: 240px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.projects{
+    padding: 80px 30px;
+    text-align: center;
+}
+.projects h2{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 3em;
+    color: #F5FEE3;
+    text-align: left;
+}
+.project-description{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    color: #F5FEE3;
+    text-align: left;
+    margin-bottom: 60px;
+    width: 75%;
+}
+.project-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.project-card{
+    background-color: #F5FEE3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.project-card h3{
+    color: #0E1A28;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 1.2em;
+    margin: 10px 10px 0 10px;
+}
+.project-card p{
+    color: #0E1A28;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    margin: 15px 10px 10px 10px;
+}
+.project-card:hover{
+    transform: scale(1.02);
+    box-shadow:0px 0px 20px 6px #A3E221;
+}
+.project-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact{
+    background-color: #A3E221;
+    color: #0E1A28;
+    margin: 50px;
+    padding: 50px;
+}
+.contact h2{
+    font-family: 'Audiowide', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+.contact p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+}
+.contact-left a{
+    text-decoration: none;
+    color: #0E1A28;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    margin: 10px 0;
+
+}
+.contact-left a:hover{
+    text-decoration: underline;
+}
+.contact-right img{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+.resume{
+    text-align: center;
+}
+
+.footer {
+    background-color: #182E73;
+    color: #F5FEE3;
+    display: flex;
+    justify-content: space-between;
+    margin: -8px;
+    padding: 20px 30px;
+}
+.footer p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+}
+.footer-left, .footer-right {
+    text-align: left;
+}
+.footer-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+.footer-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #F5FEE3;
+    display: block;
+    font-family: Jockey One, sans-serif;
+    font-size: 1.2em;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/*breakpoints*/
+@media (max-width: 1024px){
+    .aboutme-text{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px){
+    .hero{
+        margin-top: 38vh;
+    }
+    .hero h1{
+        font-size: 6em;
+    }
+    .hero p{
+        font-size: 1.4em;
+        padding: 0 10px;
+    }
+    .aboutme-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 kolommen */
+        grid-template-rows: auto auto; /* automatisch zoveel rijen als nodig */
+        gap: 1.5rem;
+    }
+    .project-description{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .navbar .logo{
+        margin: 10px 15px;
+    }
+    .logo img{
+        height: 30px;
+    }
+    .nav-links {
+        margin-right: 15px;
+    }
+    .nav-links li{
+        margin-left: 15px;
+    }
+    .nav-links a{
+        font-size: 1.2em;
+    }
+
+    .hero h1{
+        font-size: 4em;
+    }
+    .hero p{
+        font-size: 1.2em;
+    }
+    .project-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutme-text img{
+        width: 100%;
+    }
+    .aboutme-skills{
+        flex-direction: column;
+        align-items: center;
+    }
+}
