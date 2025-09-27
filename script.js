@@ -1,5 +1,28 @@
+/*Hamburger menu*/
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+function closeMenu() {
+    hamburger.classList.remove('open');
+    navLinks.classList.remove('active');
+}
+
+hamburger.addEventListener('click', function() { //when clicking hamburger
+    navLinks.classList.add('active'); //open nav-links
+    document.querySelectorAll('.nav-links a').forEach(link => { //for each link in nav-links
+        link.addEventListener('click', function() { 
+           closeMenu(); //when clicking a link, close the menu
+        });
+    });
+    hamburger.classList.toggle('open'); //add open class to hamburger
+    if (!hamburger.classList.contains('open')) {
+        closeMenu(); //if hamburger doesn't have open class, close the menu
+    }
+});
+
 const aboutmeSection = document.querySelector('.aboutme');
 const projectsSection = document.querySelector('.projects');
+const contactSection = document.querySelector('.contact');
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -16,7 +39,6 @@ document.querySelector('.projects_link').addEventListener('click', function(even
     projectsSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-// document.querySelector('.contact_link').addEventListener('click', function(event) {
-//     event.preventDefault(); // Prevent default anchor click behavior
-//     heroSection.scrollIntoView({ behavior: 'smooth' });
-// });
+document.querySelector('.contact_link').addEventListener('click', function(event) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+});

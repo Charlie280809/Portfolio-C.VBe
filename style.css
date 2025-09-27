@@ -8,6 +8,18 @@ body{
     object-fit: cover; 
     z-index: -1;
 }
+.open{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+.nav-links.active{
+    display: block;
+}
+.hidden{
+    display: none;
+}
 
 @font-face {
     font-family: 'Audiowide';
@@ -48,6 +60,11 @@ body{
 }
 .logo img{
     height: 40px;
+}
+.hamburger{
+    height: 24px;
+    width: auto;
+    display: none;
 }
 .nav-links{ /*ul*/
     display: flex;
@@ -232,6 +249,7 @@ body{
     color: #0E1A28;
     margin: 50px;
     padding: 50px;
+    font-weight: bold;
 }
 .contact h2{
     font-family: 'Audiowide', sans-serif;
@@ -276,14 +294,13 @@ body{
 .footer {
     background-color: #182E73;
     color: #F5FEE3;
-    display: flex;
-    justify-content: space-between;
     margin: -8px;
-    padding: 20px 30px;
+    padding: 20px 20px;
+    text-align: center;
 }
 .footer p{
     font-family: 'Inconsolata', monospace;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .footer-left, .footer-right {
     text-align: left;
@@ -343,11 +360,19 @@ body{
     .navbar .logo{
         margin: 10px 15px;
     }
+    .hamburger{
+        display: block;
+        margin-right: 15px;
+        cursor: pointer;
+        top: 15px;
+    }
     .logo img{
         height: 30px;
     }
     .nav-links {
+        display: none;
         margin-right: 15px;
+        margin-top: 50px;
     }
     .nav-links li{
         margin-left: 15px;
@@ -372,5 +397,17 @@ body{
     .aboutme-skills{
         flex-direction: column;
         align-items: center;
+        gap: 10px;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .contact-right img{
+        width: 40px;
     }
 }
