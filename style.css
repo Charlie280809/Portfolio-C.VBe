@@ -1,5 +1,6 @@
 body{
     min-height: 100vh;
+    background-color: #182E73;
 }
 .bg-video {
     position: fixed;
