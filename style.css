@@ -165,19 +165,30 @@ body{
     position: relative;
     font-size: 1.2em;
 }
-.software-skills{
+.softSkills-list li{
+    background-color: #0E1A28;
+    width: 150px;
+    color: #A3E221;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
+    text-align: center;
+    margin-bottom: 8px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.softSkills-list li:hover{
+    background-color: #A3E221;
+    color: #0E1A28;
+}
+.hard-skills{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.software-list img{
+.hardSkills-list img{
     width: 60px;
     height: auto;
     margin-right: 10px;
-}
-.traits-list li{
-    text-align: left;
-    margin-bottom: 32px;
 }
 .aboutme-photo {
     width: 240px;
