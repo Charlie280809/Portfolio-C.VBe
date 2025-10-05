@@ -165,11 +165,6 @@ body{
     position: relative;
     font-size: 1.2em;
 }
-.language-list img{
-    width: 240px;
-    height: auto;
-    margin-right: 10px;
-}
 .software-skills{
     display: flex;
     flex-direction: column;
@@ -246,16 +241,29 @@ body{
 }
 
 .contact{
+    padding: 80px 30px;
+    text-align: center;
+    color: #F5FEE3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.pixel-avatar{
+    width: 300px;
+    height: auto;
+    /* let the bottom of the img just touch the footer and also responsive*/
+    margin-bottom: -72px;
+}
+.contact-postit{
     background-color: #A3E221;
     color: #0E1A28;
     width: 240px;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 80px;
     padding: 50px;
     font-weight: bold;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
-
 }
 .contact h2{
     font-family: 'Audiowide', sans-serif;
