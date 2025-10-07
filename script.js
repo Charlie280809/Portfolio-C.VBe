@@ -16,7 +16,6 @@ function closeMenu() {
     hamburger.classList.remove('open');
     navLinks.classList.remove('active');
 }
-
 hamburger.addEventListener('click', function() { //when clicking hamburger
     navLinks.classList.add('active'); //open nav-links
     document.querySelectorAll('.nav-links a').forEach(link => { //for each link in nav-links
@@ -33,22 +32,17 @@ hamburger.addEventListener('click', function() { //when clicking hamburger
 const aboutmeSection = document.querySelector('.aboutme');
 const projectsSection = document.querySelector('.projects');
 const contactSection = document.querySelector('.contact');
-
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 document.querySelector('.logo').addEventListener('click', function(event) {scrollToTop();});
-
 document.querySelector('.home_link').addEventListener('click', function(event) {scrollToTop();});
-
 document.querySelector('.aboutme_link').addEventListener('click', function(event) {
     aboutmeSection.scrollIntoView({ behavior: 'smooth' });
 });
-
 document.querySelector('.projects_link').addEventListener('click', function(event) {
     projectsSection.scrollIntoView({ behavior: 'smooth' });
 });
-
 document.querySelector('.contact_link').addEventListener('click', function(event) {
     contactSection.scrollIntoView({ behavior: 'smooth' });
 });

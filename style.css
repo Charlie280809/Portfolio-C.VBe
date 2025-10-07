@@ -184,8 +184,28 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
-.hardSkills-list img{
+.hardSkills-list{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.hardSkills-li{
+    display: flex;
+    flex-direction: row;
+    background-color: #0E1A28;
+    color: #A3E221;
+    padding: 20px;
+    margin-bottom: 8px;
+    clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
+    transition: background-color 0.15s ease-in, color 0.15s ease-in;
+}
+.hardSkills-li:hover{
+    background-color: #A3E221;
+    color: #0E1A28;
+}
+.hardSkills-li img{
     width: 60px;
     height: auto;
     margin-right: 10px;
