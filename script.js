@@ -8,6 +8,30 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 
+
+window.addEventListener("DOMContentLoaded", () => {
+    const bg = document.createElement("div");
+    bg.dataset.usProject = "k5wkDeEZHty9tz3YHMpP";
+    bg.style.cssText = "width:100%; height:100%; position:fixed; top:0; left:0; z-index:-1;";
+    document.body.prepend(bg);
+
+    (function() {
+        if (!window.UnicornStudio) {
+        window.UnicornStudio = { isInitialized: false };
+        const i = document.createElement("script");
+        i.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.33/dist/unicornStudio.umd.js";
+        i.onload = function() {
+            if (!window.UnicornStudio.isInitialized) {
+            UnicornStudio.init();
+            window.UnicornStudio.isInitialized = true;
+            }
+        };
+        (document.head || document.body).appendChild(i);
+        }
+    })();
+});
+
+
 /*Hamburger menu*/
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
