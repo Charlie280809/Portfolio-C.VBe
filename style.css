@@ -188,6 +188,7 @@ body{
 .hardSkills-li{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: #0E1A28;
     color: #A3E221;
     padding: 20px;
@@ -399,14 +400,29 @@ body{
         font-size: 1.4em;
         padding: 0 10px;
     }
-    .aboutme-skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 2 kolommen */
-        grid-template-rows: auto auto; /* automatisch zoveel rijen als nodig */
-        gap: 1.5rem;
+    .aboutme-photo{
+        width: 200px;
     }
     .project-description{
         width: 100%;
+    }
+}
+@media (max-width: 800px){
+    .hero{
+        margin-top: 45vh;
+    }
+    .hero h1{
+        font-size: 5em;
+    }
+    .hero p{
+        font-size: 1.2em;
+    }
+    .aboutme-photo{
+        display: none;
+    }
+    .project-cards{
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 600px){
