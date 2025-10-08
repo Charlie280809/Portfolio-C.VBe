@@ -303,8 +303,8 @@ body{
 .contact-info{
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 40px;
+    text-align: left;
 }
 .contact-mail{
     display: flex;
@@ -334,10 +334,13 @@ body{
     height: auto;
     margin-right: 10px;
 }
-.contact-resume p{
+.contact-resume a{
     margin: 0;
+    text-decoration: none;
+    color: #0E1A28;
+    font-family: 'Inconsolata', monospace;
 }
-.contact-resume p:hover{
+.contact-resume a:hover{
     text-decoration: underline;
     cursor: pointer;}
 
