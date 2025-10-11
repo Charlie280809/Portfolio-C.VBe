@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    background-color: #182E73; /*tijdelijk*/
+    background-color: #182E73;
     margin: 0px;
     padding: 0px;
 }
@@ -76,7 +76,7 @@ body{
     text-decoration: none;
     color: #0E1A28;
     display: block;
-    font-family: Jockey One, sans-serif;
+    font-family: JockeyOne, sans-serif;
     font-size: 1.4em;
 }
 .nav-links a:hover{
@@ -212,7 +212,6 @@ body{
     width: 280px;
     height: auto;
     border-radius: 10px;
-    margin-left: 20px;
 }
 
 /*projects section*/
@@ -245,6 +244,7 @@ body{
     width: 300px;
     overflow: hidden;
     text-align: left;
+    text-decoration: none;
     transition: transform 0.3s ease;
 }
 .project-card h3{
@@ -283,7 +283,7 @@ body{
 .pixel-avatar{
     width: 300px;
     height: auto;
-    margin-bottom: -20px;
+    margin-bottom: -80px;
     z-index: -1;
 }
 .contact-postit{
