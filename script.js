@@ -5,18 +5,18 @@ window.addEventListener("DOMContentLoaded", () => {
     bg.style.cssText = "width:100%; height:100%; position:fixed; top:0; left:0; z-index:-1;";
     document.body.prepend(bg);
 
-    (function() {
+    (function () {
         if (!window.UnicornStudio) {
-        window.UnicornStudio = { isInitialized: false };
-        const i = document.createElement("script");
-        i.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.33/dist/unicornStudio.umd.js";
-        i.onload = function() {
-            if (!window.UnicornStudio.isInitialized) {
-            UnicornStudio.init();
-            window.UnicornStudio.isInitialized = true;
-            }
-        };
-        (document.head || document.body).appendChild(i);
+            window.UnicornStudio = { isInitialized: false };
+            const i = document.createElement("script");
+            i.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.33/dist/unicornStudio.umd.js";
+            i.onload = function () {
+                if (!window.UnicornStudio.isInitialized) {
+                    UnicornStudio.init();
+                    window.UnicornStudio.isInitialized = true;
+                }
+            };
+            (document.head || document.body).appendChild(i);
         }
     })();
 });
@@ -29,11 +29,11 @@ function closeMenu() {
     hamburger.classList.remove('open');
     navLinks.classList.remove('active');
 }
-hamburger.addEventListener('click', function() { //when clicking hamburger
+hamburger.addEventListener('click', function () { //when clicking hamburger
     navLinks.classList.add('active'); //open nav-links
     document.querySelectorAll('.nav-links a').forEach(link => { //for each link in nav-links
-        link.addEventListener('click', function() { 
-           closeMenu(); //when clicking a link, close the menu
+        link.addEventListener('click', function () {
+            closeMenu(); //when clicking a link, close the menu
         });
     });
     hamburger.classList.toggle('open'); //add open class to hamburger
@@ -42,20 +42,20 @@ hamburger.addEventListener('click', function() { //when clicking hamburger
     }
 });
 
-const aboutmeSection = document.querySelector('.aboutme');
-const projectsSection = document.querySelector('.projects');
-const contactSection = document.querySelector('.contact');
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-document.querySelector('.logo').addEventListener('click', function(event) {scrollToTop();});
-document.querySelector('.home_link').addEventListener('click', function(event) {scrollToTop();});
-document.querySelector('.aboutme_link').addEventListener('click', function(event) {
-    aboutmeSection.scrollIntoView({ behavior: 'smooth' });
-});
-document.querySelector('.projects_link').addEventListener('click', function(event) {
-    projectsSection.scrollIntoView({ behavior: 'smooth' });
-});
-document.querySelector('.contact_link').addEventListener('click', function(event) {
-    contactSection.scrollIntoView({ behavior: 'smooth' });
-});
+// const aboutmeSection = document.querySelector('.aboutme');
+// const projectsSection = document.querySelector('.projects');
+// const contactSection = document.querySelector('.contact');
+// function scrollToTop() {
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// }
+// document.querySelector('.logo').addEventListener('click', function(event) {scrollToTop();});
+// document.querySelector('.home_link').addEventListener('click', function(event) {scrollToTop();});
+// document.querySelector('.aboutme_link').addEventListener('click', function(event) {
+//     aboutmeSection.scrollIntoView({ behavior: 'smooth' });
+// });
+// document.querySelector('.projects_link').addEventListener('click', function(event) {
+//     projectsSection.scrollIntoView({ behavior: 'smooth' });
+// });
+// document.querySelector('.contact_link').addEventListener('click', function(event) {
+//     contactSection.scrollIntoView({ behavior: 'smooth' });
+// });

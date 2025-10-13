@@ -67,6 +67,7 @@ body{
     flex-direction: row;
     justify-content: center;
     margin-right: 30px;
+    transition: all 0.3s ease;
 }
 .nav-links li{
     list-style: none;
@@ -78,6 +79,7 @@ body{
     display: block;
     font-family: JockeyOne, sans-serif;
     font-size: 1.4em;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 .nav-links a:hover{
     text-decoration: underline;
