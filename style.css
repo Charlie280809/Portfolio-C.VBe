@@ -1,6 +1,13 @@
+:root{
+    --green: #A3E221;
+    --dark: #0E1A28;
+    --blue: #182E73;
+    --light: #F5FEE3;
+}
+
 body{
     min-height: 100vh;
-    background-color: #182E73;
+    background-color: var(--blue);
     margin: 0px;
     padding: 0px;
 }
@@ -43,7 +50,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #A3E221;
+    background-color: var(--green);
     z-index: +1;
 }
 .container{
@@ -93,7 +100,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #F5FEE3;
+    color: var(--light);
     margin-top: 30vh;
     margin-bottom: 20vh;
 }
@@ -117,12 +124,12 @@ body{
 .aboutme{
     padding: 120px 30px 0px 30px;
     text-align: center;
-    color: #F5FEE3;
+    color: var(--light);
 }
 .aboutme h2{
     font-family: 'Audiowide', sans-serif;
     font-size: 3em;
-    color: #F5FEE3;
+    color: var(--light);
     text-align: left;
 }
 .aboutme-text{
@@ -132,7 +139,7 @@ body{
     flex-direction: row;
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
-    color: #F5FEE3;
+    color: var(--light);
     text-align: left;
     gap: 40px;
 }
@@ -167,9 +174,9 @@ body{
     display: block;
 }
 .softSkills-list li{
-    background-color: #0E1A28;
+    background-color: var(--dark);
     width: 150px;
-    color: #A3E221;
+    color: var(--green);
     padding-top: 20px;
     padding-bottom: 20px;
     clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
@@ -178,8 +185,8 @@ body{
     transition: background-color 0.15s ease-in, color 0.15s ease-in;
 }
 .softSkills-list li:hover{
-    background-color: #A3E221;
-    color: #0E1A28;
+    background-color: var(--green);
+    color: var(--dark);
 }
 .hard-skills{
     display: block;
@@ -193,16 +200,16 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #0E1A28;
-    color: #A3E221;
+    background-color: var(--dark);
+    color: var(--green);
     padding: 20px;
     margin: 0px 12px 10px 0px;
     clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
     transition: background-color 0.15s ease-in, color 0.15s ease-in;
 }
 .hardSkills-li:hover{
-    background-color: #A3E221;
-    color: #0E1A28;
+    background-color: var(--green);
+    color: var(--dark);
 }
 .hardSkills-li img{
     width: auto;
@@ -224,13 +231,13 @@ body{
 .projects h2{
     font-family: 'Audiowide', sans-serif;
     font-size: 3em;
-    color: #F5FEE3;
+    color: var(--light);
     text-align: left;
 }
 .project-description{
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
-    color: #F5FEE3;
+    color: var(--light);
     text-align: left;
     margin-bottom: 60px;
     width: 75%;
@@ -241,7 +248,7 @@ body{
     gap: 40px;
 }
 .project-card{
-    background-color: #F5FEE3;
+    background-color: var(--light);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     overflow: hidden;
@@ -263,7 +270,7 @@ body{
 }
 .project-card:hover{
     transform: scale(1.02);
-    box-shadow:0px 0px 20px 6px #A3E221;
+    box-shadow:0px 0px 20px 6px var(--green);
 }
 .project-card img{
     width: 100%;
@@ -275,7 +282,7 @@ body{
 .contact{
     padding: 80px 30px;
     text-align: left;
-    color: #F5FEE3;
+    color: var(--light);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -289,8 +296,8 @@ body{
     z-index: -1;
 }
 .contact-postit{
-    background-color: #A3E221;
-    color: #0E1A28;
+    background-color: var(--green);
+    color: var(--dark);
     width: 30%;
     margin-bottom: 80px;
     padding: 50px;
@@ -320,7 +327,7 @@ body{
 }
 .contact-mail a{
     text-decoration: none;
-    color: #0E1A28;
+    color: var(--dark);
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
 }
@@ -343,7 +350,7 @@ body{
 .contact-resume a{
     margin: 0;
     text-decoration: none;
-    color: #0E1A28;
+    color: var(--dark);
     font-family: 'Inconsolata', monospace;
 }
 .contact-resume a:hover{
@@ -351,8 +358,8 @@ body{
     cursor: pointer;}
 
 .footer {
-    background-color: #182E73;
-    color: #F5FEE3;
+    background-color: var(--blue);
+    color: var(--light);
     padding: 20px 20px;
     text-align: center;
 }
