@@ -78,18 +78,24 @@ body{
 }
 .nav-links li{
     list-style: none;
-    margin-left: 30px;
+    margin-left: 12px;
 }
 .nav-links a{
     text-decoration: none;
-    color: #0E1A28;
+    color: var(--dark);
     display: block;
     font-family: JockeyOne, sans-serif;
     font-size: 1.4em;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
+    transition: color 0.2s ease, background-color 0.3s ease;
 }
 .nav-links a:hover{
-    text-decoration: underline;
+    background-color: var(--light);
+}
+.nav-links a:active{
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 /*hero section*/
@@ -104,20 +110,45 @@ body{
     margin-top: 30vh;
     margin-bottom: 20vh;
 }
+
 .hero h1{ /*Greetings!*/
     font-family: 'Audiowide';
     font-size: 8em;
     margin: 0;
+    animation: slideIn 1s ease-out;
+}
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .hero p{/*My name...*/
     font-family: 'Inconsolata', monospace;
     font-size: 1.6em;
     margin: 10px 0 0 0;
     max-width: 600px;
+    animation: fadeIn 1.5s ease-out;
 }
 .hero-logo{
     margin-top: 40px;
     height: 120px;
+    animation: fadeIn 2.5s ease-out;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /*about me section*/
@@ -207,13 +238,19 @@ body{
     clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
     transition: background-color 0.15s ease-in, color 0.15s ease-in;
 }
-.hardSkills-li:hover{
-    background-color: var(--green);
+.hardSkills-li p{
     color: var(--dark);
+}
+.hardSkills-li:hover{
+    transition: all 0.15s ease-in;
+}
+.hardSkills-li:hover p{
+    transition: all 0.15s ease-in;
+    color: var(--green);
 }
 .hardSkills-li img{
     width: auto;
-    height: 60px;
+    height: 48px;
     align-self: center;
     margin-right: 10px;
 }
@@ -405,6 +442,9 @@ body{
     }
     .hero p{
         font-size: 1.2em;
+    }
+    .hero-logo{
+        height: 80px;
     }
     .aboutme-photo{
         display: none;
