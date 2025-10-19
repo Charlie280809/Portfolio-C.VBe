@@ -406,12 +406,6 @@ body{
 }
 
 /*breakpoints*/
-@media (max-width: 1024px){
-    .aboutme-text{
-        flex-direction: column;
-        align-items: center;
-    }
-}
 @media (max-width: 1000px){
     .hero{
         margin-top: 38vh;
@@ -422,6 +416,10 @@ body{
     .hero p{
         font-size: 1.4em;
         padding: 0 10px;
+    }
+    .aboutme-text{
+        flex-direction: column;
+        align-items: center;
     }
     .aboutme-photo{
         width: 200px;
