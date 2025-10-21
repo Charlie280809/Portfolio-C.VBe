@@ -74,7 +74,6 @@ body{
     flex-direction: row;
     justify-content: center;
     margin-right: 30px;
-    transition: all 0.3s ease;
 }
 .nav-links li{
     list-style: none;
@@ -98,6 +97,9 @@ body{
     color: var(--light);
 }
 
+#home{
+    scroll-margin-top: 100vh;
+}
 /*hero section*/
 .hero{
     flex: 1 0 auto;
@@ -255,9 +257,9 @@ body{
     margin-right: 10px;
 }
 .aboutme-photo {
-    width: 280px;
-    height: auto;
-    border-radius: 10px;
+    width: 300px;
+    height: fit-content;
+    align-self: center;
 }
 
 /*projects section*/
@@ -423,6 +425,7 @@ body{
     }
     .aboutme-photo{
         width: 200px;
+        height: fit-content;
     }
     .project-description{
         width: 100%;
@@ -461,7 +464,7 @@ body{
     }
     .pixel-avatar{
         width: 240px;
-        margin-bottom: -30px;
+        margin-bottom: -150px;
         z-index: -1;
     }
 }
@@ -514,6 +517,9 @@ body{
         align-items: center;
         gap: 10px;
     }
+    .aboutme-photo{
+        display: block;
+    }
     .contact{
         flex-direction: column-reverse;
         padding: 30px;
@@ -523,5 +529,9 @@ body{
     }
     .contact-right img{
         width: 400px;
+    }
+    .pixel-avatar{
+        margin-bottom: -30px;
+        z-index: -1;
     }
 }
