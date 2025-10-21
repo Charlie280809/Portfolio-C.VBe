@@ -284,6 +284,8 @@ body{
     width: 300px;
     height: fit-content;
     align-self: center;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
 }
 
 /*projects section*/
@@ -421,10 +423,14 @@ body{
     cursor: pointer;}
 
 .footer {
+    position: relative;
     background-color: var(--blue);
+    box-sizing: border-box;
     color: var(--light);
     padding: 20px 20px;
     text-align: center;
+    bottom: 0;
+    width: 100%;
 }
 .footer p{
     font-family: 'Inconsolata', monospace;
