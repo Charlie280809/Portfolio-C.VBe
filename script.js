@@ -42,20 +42,29 @@ hamburger.addEventListener('click', function () { //when clicking hamburger
     }
 });
 
-// const aboutmeSection = document.querySelector('.aboutme');
-// const projectsSection = document.querySelector('.projects');
-// const contactSection = document.querySelector('.contact');
-// function scrollToTop() {
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-// }
-// document.querySelector('.logo').addEventListener('click', function(event) {scrollToTop();});
-// document.querySelector('.home_link').addEventListener('click', function(event) {scrollToTop();});
-// document.querySelector('.aboutme_link').addEventListener('click', function(event) {
-//     aboutmeSection.scrollIntoView({ behavior: 'smooth' });
-// });
-// document.querySelector('.projects_link').addEventListener('click', function(event) {
-//     projectsSection.scrollIntoView({ behavior: 'smooth' });
-// });
-// document.querySelector('.contact_link').addEventListener('click', function(event) {
-//     contactSection.scrollIntoView({ behavior: 'smooth' });
-// });
+// Smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+//.aboutme-photo changer
+const photo = document.querySelector('.aboutme-photo');
+const photos = [
+    './images/photo_1.png',
+    './images/photo_2.png',
+    './images/photo_3.png',
+    './images/photo_4.png'
+];
+let currentPhoto = 1;
+function changePhoto() {
+    currentPhoto = (currentPhoto + 1) % photos.length;
+    photo.src = photos[currentPhoto];
+}
+setInterval(changePhoto, 5000);
