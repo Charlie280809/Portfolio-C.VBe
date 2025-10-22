@@ -87,22 +87,26 @@ body {
     justify-content: center;
     margin-right: 30px;
 }
-
 .nav-links li {
     list-style: none;
-    margin-left: 30px;
+    margin-left: 12px;
 }
-
 .nav-links a {
     text-decoration: none;
     color: #0E1A28;
     display: block;
     font-family: JockeyOne, sans-serif;
     font-size: 1.4em;
+    padding: 10px;
+    clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
+    transition: color 0.2s ease, background-color 0.3s ease;
 }
-
-.nav-links a:hover {
-    text-decoration: underline;
+.nav-links a:hover{
+    background-color: var(--light);
+}
+.nav-links a:active{
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 .hero {
@@ -163,7 +167,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5em;
+    gap: 3em;
 }
 
 .story_inspiration div span {
