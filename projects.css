@@ -145,7 +145,7 @@ body {
 
 .context p {
     font-family: 'Inconsolata', monospace;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .story_inspiration {
@@ -163,7 +163,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 5em;
 }
 
 .story_inspiration div span {
@@ -172,7 +172,7 @@ body {
 
 .story_inspiration div p {
     font-family: 'Inconsolata', monospace;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.3em;
 }
 
@@ -194,7 +194,7 @@ body {
 
 .final_product p {
     font-family: 'Inconsolata', monospace;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.3em;
 }
 
