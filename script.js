@@ -71,20 +71,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //.aboutme-photo changer
-const photo = document.querySelector('.aboutme-photo');
-const photos = [
-    './images/photo_1.png',
-    './images/photo_2.png',
-    './images/photo_3.png',
-    './images/photo_4.png'
-];
-let currentPhoto = 0;
-function changePhoto() {
-    photo.style.opacity = 0.25;
-    setTimeout(() => {
-        currentPhoto = (currentPhoto + 1) % photos.length;
-        photo.src = photos[currentPhoto];
-        photo.style.opacity = 1;
-    }, 300);
-}
-setInterval(changePhoto, 10000);
+document.addEventListener("DOMContentLoaded", () => {
+    const photo = document.querySelector('.aboutme-photo');
+    if(!photo) return;
+    const photos = [
+        './images/photo_1.png',
+        './images/photo_2.png',
+        './images/photo_3.png',
+        './images/photo_4.png'
+    ];
+    let currentPhoto = 0;
+    function changePhoto() {
+        photo.style.opacity = 0.25;
+        setTimeout(() => {
+            currentPhoto = (currentPhoto + 1) % photos.length;
+            photo.src = photos[currentPhoto];
+            photo.style.opacity = 1;
+        }, 300);
+    }
+    setInterval(changePhoto, 10000);
+});
