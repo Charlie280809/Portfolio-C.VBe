@@ -21,18 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
     })();
 });
 
-// Smooth scrolling for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById('nav-toggle');
     const rightMenu = document.querySelector('nav .right');
@@ -44,29 +32,35 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.overflow = rightMenu.classList.contains('open') ? 'hidden' : '';
     });
 
-    // Close menu when a link is clicked
+    // shared smooth-scroll function
+    function smoothScrollToHash(link, event) {
+        const href = link.getAttribute('href') || '';
+        if (!href.includes('#')) return;
+        const [, hash] = href.split('#');
+        if (!hash) return;
+        const target = document.getElementById(hash);
+        if (target) {
+            event && event.preventDefault();
+            // close mobile menu if open
+            rightMenu && rightMenu.classList.remove('open');
+            document.body.style.overflow = '';
+            target.scrollIntoView({ behavior: 'smooth' });
+            history.pushState(null, '', `#${hash}`);
+        }
+    }
+
+    // Close menu when a nav link is clicked + smooth scroll
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            rightMenu.classList.remove('open');
-            document.body.style.overflow = '';
-
-            // --- Smooth scroll logic ---
-            const href = link.getAttribute('href');
-
-            // If it's a hash link (e.g. ./index.html#projects or #projects)
-            if (href.includes('#')) {
-                const [, hash] = href.split('#'); // Extract after #
-                const target = document.getElementById(hash);
-
-                // Prevent reload if already on index.html
-                if (target && (window.location.pathname.endsWith('index.html') || window.location.pathname === '/')) {
-                    e.preventDefault(); // Stop page reload
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    history.pushState(null, '', `#${hash}`); // Update URL hash
-                }
-            }
+            smoothScrollToHash(link, e);
         });
     });
+
+    // Also attach to the CTA button(s)
+    const ctaBTN = document.querySelector('.CTA-btn');
+    ctaBTN.addEventListener('click', (e) => smoothScrollToHash(ctaBTN, e));
+    const logoLink = document.querySelector('.logoLink');
+    logoLink.addEventListener('click', (e) => smoothScrollToHash(logoLink, e));
 });
 
 
