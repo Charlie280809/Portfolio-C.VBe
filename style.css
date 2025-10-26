@@ -169,7 +169,8 @@ body{
 
 /*about me section*/
 .aboutme{
-    padding: 120px 30px 0px 30px;
+    /* padding: 120px 30px 0px 30px; */
+    padding: 100px 12% 0px 12%;
     text-align: center;
     color: var(--light);
 }
@@ -223,17 +224,16 @@ body{
 .softSkills-list li{
     background-color: var(--dark);
     width: 150px;
-    color: var(--green);
+    color: var(--light);
     padding-top: 20px;
     padding-bottom: 20px;
     clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
     text-align: center;
     margin-bottom: 8px;
-    transition: background-color 0.15s ease-in, color 0.15s ease-in;
+    transition: color 0.15s ease-in;
 }
 .softSkills-list li:hover{
-    background-color: var(--green);
-    color: var(--dark);
+    color: var(--green);
 }
 .hard-skills{
     display: block;
@@ -255,10 +255,7 @@ body{
     transition: background-color 0.15s ease-in, color 0.15s ease-in;
 }
 .hardSkills-li p{
-    color: var(--dark);
-}
-.hardSkills-li:hover{
-    transition: all 0.15s ease-in;
+    color: var(--light);
 }
 .hardSkills-li:hover p{
     transition: all 0.15s ease-in;
@@ -280,7 +277,8 @@ body{
 
 /*projects section*/
 .projects{
-    padding: 80px 30px;
+    /* padding: 80px 30px; */
+    padding: 80px 12%;
     text-align: center;
 }
 .projects h2{
@@ -381,21 +379,23 @@ body{
     margin-top: 30px;
 }
 .contact-mail a{
+    background-color: var(--light);
     text-decoration: none;
     color: var(--dark);
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
+    padding: 10px 50px 10px 10px;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);
+    transition: color 0.2s ease, background-color 0.3s ease;
 }
 .contact-mail a:hover{
-    text-decoration: underline;
+    color: var(--light);
+    background-color: var(--blue);
 }
-.contact-mail p{
-    margin: 0;
-}
+
 .contact-findmeon p{
     margin: 0 0 10px 0;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.2em;
 }
 .contact-findmeon img{
     width: 40px;
@@ -403,23 +403,29 @@ body{
     margin-right: 10px;
 }
 .contact-resume a{
+    font-size: 1.2em;
     margin: 0;
     text-decoration: none;
+    padding: 10px 50px 10px 10px;
+    background-color: var(--light);
     color: var(--dark);
     font-family: 'Inconsolata', monospace;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);
+    transition: color 0.2s ease, background-color 0.3s ease;
 }
 .contact-resume a:hover{
-    text-decoration: underline;
-    cursor: pointer;}
-
+    color: var(--light);
+    background-color: var(--blue);
+}
 .footer {
-    position: relative;
+    /* position: relative; */
+    display: block;
     background-color: var(--blue);
     box-sizing: border-box;
     color: var(--light);
     padding: 20px 20px;
     text-align: center;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
 }
 .footer p{

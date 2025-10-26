@@ -2,7 +2,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     const bg = document.createElement("div");
     bg.dataset.usProject = "k5wkDeEZHty9tz3YHMpP";
-    bg.style.cssText = "width:100%; height:100%; position:fixed; top:0; left:0; z-index:-1;";
+    bg.style.cssText = "width:100%; height:110%; position:fixed; top:0; left:0; z-index:-1;";
     document.body.prepend(bg);
 
     (function () {
