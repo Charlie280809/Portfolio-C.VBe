@@ -58,6 +58,18 @@
     <meta property="twitter:image" content="https://portfoliocvbe.tech/images/headerIMG.jpg" />
 
     <link rel="stylesheet" href="./style.css">
+    <!-- MailerLite Universal -->
+    <script>
+        (function (w, d, e, u, f, l, n) {
+            w[f] = w[f] || function () {
+                (w[f].q = w[f].q || [])
+                .push(arguments);
+            }, l = d.createElement(e), l.async = 1, l.src = u,
+            n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+        })
+            (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+        ml('account', '1867124');
+    </script>
 </head>
 
 <body>
@@ -71,144 +83,146 @@
             <div class="logo"><a class="logoLink" href="#home"><img src="./images/logo-dark.webp" alt="logo"></a></div>
         </div>
         <div class="right" id="nav-links">
-                <a class="home_link" href="#home">Home</a>
-                <a class="aboutme_link" href="#about-me">About me</a>
-                <a class="projects_link" href="#projects">Projects</a>
-                <a class="contact_link" href="#contact">Contact</a>
+            <a class="home_link" href="#home">Home</a>
+            <a class="aboutme_link" href="#about-me">About me</a>
+            <a class="projects_link" href="#projects">Projects</a>
+            <a class="contact_link" href="#contact">Contact</a>
         </div>
         <div class="nav-toggle" id="nav-toggle">
             <img class="hamburger" src="./images/hamburger.webp" alt="Open menu">
         </div>
     </nav>
 
-        <header id="home" class="hero">
-            <h1>Greetings!</h1>
-            <p>My name is Charlie Van Belle</p>
-            <p>- Student Digital Experience Design -</p>
-            <img class="hero-logo" src="./images/logo-white.webp" alt="logo">
-            <a class="CTA-btn" href="#contact">Get in touch</a>
-        </header>
+    <header id="home" class="hero">
+        <h1>Greetings!</h1>
+        <p>My name is Charlie Van Belle</p>
+        <p>- Student Digital Experience Design -</p>
+        <img class="hero-logo" src="./images/logo-white.webp" alt="logo">
+        <a class="CTA-btn" href="#contact">Get in touch</a>
+    </header>
 
-        <section id="about-me" class="aboutme">
-            <h2>About Me</h2>
-            <div class="aboutme-text">
-                <p>I'm <strong>Charlie Van Belle</strong>, I was born and raised in <strong>Belgium</strong>. Throughout my education, I've always been a
-                    dedicated student. 
-                    <br>
-                    After successfully earning my high school diploma in a scientific track, I
-                    decided to follow a more creative path. That path led me to digital web design, where I discovered how
-                    much I enjoy it. I especially thrive when working in a team, as collaboration brings the energy of real-world projects.
-                    <br>
-                    <strong>Feel free to contact me using my email at the bottom of the page!</strong>
-                </p>
-                <img src="./images/timeline.webp" alt="timeline">
+    <section id="about-me" class="aboutme">
+        <h2>About Me</h2>
+        <div class="aboutme-text">
+            <p>I'm <strong>Charlie Van Belle</strong>, I was born and raised in <strong>Belgium</strong>. Throughout my
+                education, I've always been a
+                dedicated student.
+                <br>
+                After successfully earning my high school diploma in a scientific track, I
+                decided to follow a more creative path. That path led me to digital web design, where I discovered how
+                much I enjoy it. I especially thrive when working in a team, as collaboration brings the energy of
+                real-world projects.
+                <br>
+                <strong>Feel free to contact me using my email at the bottom of the page!</strong>
+            </p>
+            <img src="./images/timeline.webp" alt="timeline">
+        </div>
+        <div class="aboutme-skills">
+            <div class="soft-skills">
+                <h3>Soft skills</h3>
+                <ul class="softSkills-list">
+                    <li>Team player</li>
+                    <li>Open-minded</li>
+                    <li>Neat</li>
+                    <li>Creative</li>
+                    <li>Adaptable</li>
+                </ul>
             </div>
-            <div class="aboutme-skills">
-                <div class="soft-skills">
-                    <h3>Soft skills</h3>
-                    <ul class="softSkills-list">
-                        <li>Team player</li>
-                        <li>Open-minded</li>
-                        <li>Neat</li>
-                        <li>Creative</li>
-                        <li>Adaptable</li>
-                    </ul>
-                </div>
-                <div class="hard-skills">
-                    <h3>Hard skills</h3>
-                    <ul class="hardSkills-list">
-                        <li>
-                            <div class="hardSkills-li">
-                                <img src="./images/figma_icon.webp" alt="figma">
-                                <p>95%</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hardSkills-li">
-                                <img src="./images/Blender_icon.webp" alt="Blender">
-                                <p>60%</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hardSkills-li">
-                                <img src="./images/JS.webp" alt="JavaScript">
-                                <p>60%</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hardSkills-li">
-                                <img src="./images/HTML.webp" alt="HTML">
-                                <p>85%</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hardSkills-li">
-                                <img src="./images/CSS.webp" alt="CSS">
-                                <p>80%</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="hardSkills-li">
-                                <img src="./images/php.webp" alt="PHP">
-                                <p>60%</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <img class="aboutme-photo" src="./images/photo_1.png" alt="picture of me">
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <p class="project-description">Behold, some of the projects I’ve worked on. Most of them I created on my
-                own,
-                while some were group efforts. Feel free to scroll and click any project to get more info about it.</p>
-            <div class="project-cards">
-                <a class="project-card" href="./project_potioncart.html">
-                    <img src="./images/potioncart.webp" alt="Project 2">
-                    <h3>Tyco's potioncart</h3>
-                    <p>School project made in Blender</p>
-                </a>
-                <a class="project-card" href="./project_zuiderbad.html">
-                    <img src="./images/Zmap.webp" alt="Project 1">
-                    <h3>Zuiderbad interactive map</h3>
-                    <p>School project made for a client</p>
-                </a>
-                <a class="project-card" href="./project_googledoodle.html">
-                    <img src="./images/googledoodle.webp" alt="Project 3">
-                    <h3>Google doodle</h3>
-                    <p>School project made in Figma/code</p>
-                </a>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <!-- <img class="pixel-avatar" src="./images/pixel_avatar.webp" alt="Charlie's avatar"> -->
-            <img class="pixel-avatar" src="./images/pixel_avatar_gif.gif" alt="Charlie's avatar">
-            <div class="contact-postit">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <div class="contact-mail">
-                        <a href="mailto:charlievanbelle@gmail.com">charlievanbelle@gmail.com</a>
-                    </div>
-                    <div class="contact-findmeon">
-                        <p>Find me on:</p>
-                        <div>
-                            <a href="https://www.linkedin.com/in/charlie-van-belle-75b45a381/" target="_blank"><img
-                                    src="./images/linkedin_icon.webp" alt="LinkedIn"></a>
-                            <a href="https://github.com/Charlie280809" target="_blank"><img
-                                    src="./images/github_icon.webp" alt="GitHub"></a>
+            <div class="hard-skills">
+                <h3>Hard skills</h3>
+                <ul class="hardSkills-list">
+                    <li>
+                        <div class="hardSkills-li">
+                            <img src="./images/figma_icon.webp" alt="figma">
+                            <p>95%</p>
                         </div>
-                    </div>
-                    <div class="contact-resume">
-                        <a href="./images/CV - Charlie VBE.pdf" download>Download resume (Dutch)</a>
+                    </li>
+                    <li>
+                        <div class="hardSkills-li">
+                            <img src="./images/Blender_icon.webp" alt="Blender">
+                            <p>60%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hardSkills-li">
+                            <img src="./images/JS.webp" alt="JavaScript">
+                            <p>60%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hardSkills-li">
+                            <img src="./images/HTML.webp" alt="HTML">
+                            <p>85%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hardSkills-li">
+                            <img src="./images/CSS.webp" alt="CSS">
+                            <p>80%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hardSkills-li">
+                            <img src="./images/php.webp" alt="PHP">
+                            <p>60%</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <img class="aboutme-photo" src="./images/photo_1.png" alt="picture of me">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p class="project-description">Behold, some of the projects I’ve worked on. Most of them I created on my
+            own,
+            while some were group efforts. Feel free to scroll and click any project to get more info about it.</p>
+        <div class="project-cards">
+            <a class="project-card" href="./project_potioncart.html">
+                <img src="./images/potioncart.webp" alt="Project 2">
+                <h3>Tyco's potioncart</h3>
+                <p>School project made in Blender</p>
+            </a>
+            <a class="project-card" href="./project_zuiderbad.html">
+                <img src="./images/Zmap.webp" alt="Project 1">
+                <h3>Zuiderbad interactive map</h3>
+                <p>School project made for a client</p>
+            </a>
+            <a class="project-card" href="./project_googledoodle.html">
+                <img src="./images/googledoodle.webp" alt="Project 3">
+                <h3>Google doodle</h3>
+                <p>School project made in Figma/code</p>
+            </a>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <!-- <img class="pixel-avatar" src="./images/pixel_avatar.webp" alt="Charlie's avatar"> -->
+        <img class="pixel-avatar" src="./images/pixel_avatar_gif.gif" alt="Charlie's avatar">
+        <div class="contact-postit">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-mail">
+                    <a href="mailto:charlievanbelle@gmail.com">charlievanbelle@gmail.com</a>
+                </div>
+                <div class="contact-findmeon">
+                    <p>Find me on:</p>
+                    <div>
+                        <a href="https://www.linkedin.com/in/charlie-van-belle-75b45a381/" target="_blank"><img
+                                src="./images/linkedin_icon.webp" alt="LinkedIn"></a>
+                        <a href="https://github.com/Charlie280809" target="_blank"><img src="./images/github_icon.webp"
+                                alt="GitHub"></a>
                     </div>
                 </div>
+                <div class="contact-resume">
+                    <a href="./images/CV - Charlie VBE.pdf" download>Download resume (Dutch)</a>
+                </div>
             </div>
-        </section>
-        <footer class="footer">
-            <p>© 2025 Charlie Van Belle. All rights reserved.</p>
-        </footer>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2025 Charlie Van Belle. All rights reserved.</p>
+    </footer>
 </body>
 <script src="script.js"></script>
 
