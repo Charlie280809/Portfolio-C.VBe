@@ -23,6 +23,12 @@ body{
     font-style: normal;
 }
 @font-face {
+    font-family: 'Jersey25';
+    src: url('./fonts/Jersey_25/Jersey25-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Inconsolata';
     src: url('./fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf') format('truetype');
     font-weight: normal;
