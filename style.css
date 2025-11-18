@@ -160,7 +160,12 @@ body{
     font-size: 1.6em;
     clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
     /* transition: bounce 5s infinite; */
+    transition: background-color 0.3s ease;
 }
+.CTA-btn:hover{
+    background-color: var(--light);
+}
+
 /* @keyframes bounce{
     0% {
         transform: scale(1);
@@ -172,6 +177,9 @@ body{
         transform: scale(1);
     }
 } */
+.CTA-btn:hover{
+    background-color: var(--light);
+}
 
 /*about me section*/
 .aboutme{
