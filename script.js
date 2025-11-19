@@ -85,3 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setInterval(changePhoto, 10000);
 });
+
+//LinkedIn icon hover
+let linkedinIcon = document.querySelector('.linkedin_icon img');
+linkedinIcon.addEventListener('mouseover', function() {
+    this.src = './images/linkedin_icon_coloured.webp';
+});
+linkedinIcon.addEventListener('mouseout', function() {
+    this.src = './images/linkedin_icon.webp';
+});
