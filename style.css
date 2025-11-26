@@ -110,8 +110,9 @@ body{
 }
 
 .hero h1{ /*Greetings!*/
-    font-family: 'Audiowide';
-    font-size: 8em;
+    font-family: 'jersey25', sans-serif;
+    letter-spacing: 6px;
+    font-size: 12em;
     margin: 0;
     animation: slideIn 1s ease-out;
 }
@@ -199,15 +200,19 @@ body{
     margin-right: auto; */
     display: flex;
     flex-direction: row;
+    align-items: center;
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
     color: var(--light);
     text-align: left;
     gap: 40px;
 }
-.aboutme-text img{
-    width: 100%;
-    height: 240px;
+.aboutme-text .aboutme-photo{
+    width: 300px;
+    height: fit-content;
+    align-self: center;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
 }
 .aboutme-skills{
     display: flex;
@@ -280,13 +285,6 @@ body{
     height: 48px;
     align-self: center;
     margin-right: 10px;
-}
-.aboutme-photo {
-    width: 300px;
-    height: fit-content;
-    align-self: center;
-    transition: opacity 0.2s ease-in-out;
-    opacity: 1;
 }
 
 /*projects section*/
@@ -405,9 +403,15 @@ body{
 }
 .contact-findmeon div{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     gap: 12px;
+}
+.contact-findmeon a{
+    text-decoration: none;
+    color: var(--dark);
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 .contact-findmeon img{
     width: 40px;
@@ -452,7 +456,8 @@ body{
         margin-top: 26vh;
     }
     .hero h1{
-        font-size: 6em;
+        font-size: 8em;
+        letter-spacing: 2px;
     }
     .hero p{
         font-size: 1.4em;
@@ -479,7 +484,7 @@ body{
         margin-top: 30vh;
     }
     .hero h1{
-        font-size: 5em;
+        font-size: 7em;
     }
     .hero p{
         font-size: 1.2em;
@@ -573,7 +578,7 @@ body{
 
 
     .hero h1{
-        font-size: 4em;
+        font-size: 6em;
     }
     .hero p{
         font-size: 1.2em;

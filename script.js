@@ -87,10 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //LinkedIn icon hover
-let linkedinIcon = document.querySelector('.linkedin_icon img');
+let linkedinIcon = document.querySelector('.linkedin_icon');
 linkedinIcon.addEventListener('mouseover', function() {
-    this.src = './images/linkedin_icon_coloured.webp';
+    document.querySelector('.linkedin_icon img').src = './images/linkedin_icon_coloured.webp';
 });
 linkedinIcon.addEventListener('mouseout', function() {
-    this.src = './images/linkedin_icon.webp';
+    document.querySelector('.linkedin_icon img').src = './images/linkedin_icon.webp';
 });
