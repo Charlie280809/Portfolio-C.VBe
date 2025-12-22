@@ -94,3 +94,12 @@ linkedinIcon.addEventListener('mouseover', function() {
 linkedinIcon.addEventListener('mouseout', function() {
     document.querySelector('.linkedin_icon img').src = './images/linkedin_icon.webp';
 });
+
+//GitHub icon hover
+let githubIcon = document.querySelector('.github_icon');
+githubIcon.addEventListener('mouseover', function() {
+    document.querySelector('.github_icon img').src = './images/github_icon_coloured.webp';
+});
+githubIcon.addEventListener('mouseout', function() {
+    document.querySelector('.github_icon img').src = './images/github_icon.webp';
+});
