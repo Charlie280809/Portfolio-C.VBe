@@ -143,7 +143,7 @@ h2 {
 .tools {
     display: flex;
     flex-direction: row;
-    justify-self: flex-start;   
+    justify-self: flex-start;
 }
 
 .tools p {
@@ -388,12 +388,15 @@ h3 {
         font-size: 1em;
     }
 
-    .hero div img {
+    .hero_image {
         width: 80%;
         margin-right: 0px;
     }
 
-    /* potioncart */
+    .tools p {
+        margin: 0px 15px 0px 0px;
+    }
+
     .story_inspiration div {
         flex-direction: column;
         align-items: center;
@@ -411,23 +414,13 @@ h3 {
         width: 80%;
     }
 
-    /* google doodle */
-    .googledoodle_process .idea_images {
-        flex-direction: column;
-        align-items: center;
+    h3 {
+        font-size: 2em;
     }
 
-    .googledoodle_process .idea_images img {
-        width: 90%;
-    }
-
-    .googledoodle_figmadesign {
-        flex-direction: column;
-        gap: 0.6rem;
-    }
-
-    .googledoodle_figmadesign img {
-        width: 90%;
+    .project-card {
+        width: 250px;
+        font-size: 1em;
     }
 }
 
@@ -501,13 +494,7 @@ h3 {
         }
     }
 
-    /* potioncart */
     .animation video {
-        width: 100%;
-    }
-
-    /* google doodle */
-    .googledoodleAnimation div video {
         width: 100%;
     }
 
