@@ -78,7 +78,7 @@ body{
     text-decoration: none;
     color: var(--dark);
     /* display: block; */
-    font-family: JockeyOne, sans-serif;
+    font-family: 'JockeyOne', sans-serif;
     font-size: 1.4em;
     padding: 12px 10px;
     clip-path: polygon(10% 20%, 90% 20%, 100% 50%, 90% 80%, 10% 80%, 0% 50%);
@@ -370,7 +370,9 @@ body{
     clip-path: polygon(0 0, 85% 0, 100% 20%, 100% 100%, 0 100%);
 }
 .contact h2{
-    font-family: 'Audiowide', sans-serif;
+    /* font-family: 'Audiowide', sans-serif; */
+    font-family: 'Jersey25', sans-serif;
+    font-weight: 400;
     font-size: 3em;
     margin: 0;
 }
@@ -409,6 +411,8 @@ body{
 .contact-findmeon a{
     text-decoration: none;
     color: var(--dark);
+    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Jockey One', monospace; */
     display: flex;
     gap: 12px;
     align-items: center;
