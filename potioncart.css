@@ -117,7 +117,7 @@ body {
     font-size: 5em;
 }
 
-.hero div {
+.hero_div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -376,7 +376,27 @@ h3 {
 }
 
 /*breakpoints*/
-@media (max-width: 1000px) {}
+@media (max-width: 1000px) {
+    .hero {
+        padding: 80px 50px;
+    }
+
+    .hero_div {
+        grid-template-columns: 1fr;
+    }
+
+    .hero_image {
+        width: 80%;
+    }
+
+    .story_inspiration div {
+        flex-direction: column;
+    }
+
+    .story_inspiration div img {
+        width: 80%;
+    }
+}
 
 @media (max-width: 800px) {
     .hero h1 {
@@ -397,6 +417,14 @@ h3 {
         margin: 0px 15px 0px 0px;
     }
 
+    .context{
+        padding: 40px 5%;
+    }
+
+    .story_inspiration {
+        padding: 40px 5%;
+    }
+
     .story_inspiration div {
         flex-direction: column;
         align-items: center;
@@ -412,6 +440,13 @@ h3 {
 
     .story_inspiration div img {
         width: 80%;
+    }
+
+    .final_product {
+        padding: 40px 5%;
+    }
+    .animation video {
+        width: 100%;
     }
 
     h3 {
@@ -492,6 +527,10 @@ h3 {
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    .story_inspiration div img {
+        width: 100%;
     }
 
     .animation video {
