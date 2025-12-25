@@ -86,7 +86,6 @@ body {
 .right a {
     text-decoration: none;
     color: var(--dark);
-    /* display: block; */
     font-family: JockeyOne, sans-serif;
     font-size: 1.4em;
     padding: 10px;
@@ -104,27 +103,24 @@ body {
 }
 
 .hero {
-    /* background-color: var(--blue); */
     height: 100%;
     background-color: rgb(47, 57, 147, 0.45);
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--light);
-    /* padding: 4rem 50px 0px 50px; */
-    /* padding: 40px 50px; */
     padding: 60px 50px;
 }
 
 .hero h1 {
     font-family: 'Jersey25', sans-serif;
+    font-weight: 500;
     font-size: 5em;
 }
 
 .hero_div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* flex-direction: row; */
     align-items: center;
     gap: 2rem;
     font-family: 'Inconsolata', monospace;
@@ -133,6 +129,7 @@ body {
 
 .hero_image {
     width: 100%;
+    justify-self: center;
 }
 
 h2 {
@@ -141,7 +138,7 @@ h2 {
     color: var(--light);
     font-size: 3.2em;
     letter-spacing: 1px;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .contributors {
@@ -210,6 +207,9 @@ h2 {
 .process {
     padding: 40px 12% 0px 12%;
     color: var(--light);
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
 }
 
 .process p {
@@ -245,7 +245,6 @@ h2 {
 
 .typography {
     width: 50%;
-    /* height: auto; */
 }
 
 .process .tutorial {
@@ -253,9 +252,9 @@ h2 {
     display: flex;
     width: 80%;
     flex-direction: row;
-    justify-self: center;
+    align-self: center;
     align-items: center;
-    gap: 40px;
+    gap: 3em;
 }
 
 .before_after {
@@ -441,7 +440,7 @@ h3 {
 /*breakpoints*/
 @media (max-width: 1000px) {
     .hero {
-        padding: 10em 50px;
+        padding: 80px 50px;
     }
 
     .hero_div {
@@ -451,11 +450,29 @@ h3 {
     .hero_image {
         width: 80%;
     }
+
+    .process .style {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .moodboard {
+        width: 50%;
+        height: 50%;
+    }
+
+    .typography {
+        width: 40%;
+    }
+
+    .process .tutorial {
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
     .hero {
-        padding: 8em 50px;
+        padding: 80px 50px;
     }
 
     .hero h1 {
@@ -473,6 +490,22 @@ h3 {
 
     .tools p {
         margin: 0px 15px 0px 0px;
+    }
+
+    .context {
+        padding: 40px 5%;
+    }
+
+    .assignment {
+        padding: 0px 5%;
+    }
+
+    .process {
+        padding: 40px 5% 0px 5%;
+    }
+
+    .endproduct {
+        padding: 0px 5% 40px 5%;
     }
 
     h3 {
@@ -561,6 +594,35 @@ h3 {
 
     h2 {
         font-size: 2.2em;
+    }
+
+    .process .tutorial {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .before_after .changes {
+        width: 90%;
+    }
+
+    .before_after .map {
+        flex-direction: column;
+    }
+
+    .before_after .location {
+        flex-direction: column;
+    }
+
+    .before_after .info {
+        flex-direction: column;
+    }
+
+    .before img {
+        width: 60%;
+    }
+
+    .after img {
+        width: 60%;
     }
 
     .other_projects {
