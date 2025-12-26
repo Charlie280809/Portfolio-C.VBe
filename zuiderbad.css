@@ -326,7 +326,7 @@ h2 {
     font-weight: 500;
     color: var(--light);
     font-size: 2em;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 .after img {
@@ -603,6 +603,7 @@ h3 {
 
     .before_after .changes {
         width: 90%;
+        margin-bottom: 0px;
     }
 
     .before_after .map {
