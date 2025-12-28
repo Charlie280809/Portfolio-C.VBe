@@ -182,18 +182,20 @@ body{
     background-color: var(--light);
 }
 
+h2{
+    font-family: 'Jersey25', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    color: var(--light);
+    text-align: left;
+}
+
 /*about me section*/
 .aboutme{
     /* padding: 120px 30px 0px 30px; */
     padding: 100px 12% 0px 12%;
     text-align: center;
     color: var(--light);
-}
-.aboutme h2{
-    font-family: 'Audiowide', sans-serif;
-    font-size: 3em;
-    color: var(--light);
-    text-align: left;
 }
 .aboutme-text{
     /* margin-left: auto;
@@ -293,12 +295,6 @@ body{
     padding: 80px 12%;
     text-align: center;
 }
-.projects h2{
-    font-family: 'Audiowide', sans-serif;
-    font-size: 3em;
-    color: var(--light);
-    text-align: left;
-}
 .project-description{
     font-family: 'Inconsolata', monospace;
     font-size: 1.2em;
@@ -365,15 +361,15 @@ body{
     color: var(--dark);
     width: 30%;
     margin-bottom: 80px;
-    padding: 50px;
+    padding: 30px;
     font-weight: bold;
     clip-path: polygon(0 0, 85% 0, 100% 20%, 100% 100%, 0 100%);
 }
 .contact h2{
-    /* font-family: 'Audiowide', sans-serif; */
     font-family: 'Jersey25', sans-serif;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 4em;
+    color: var(--dark);
     margin: 0;
 }
 .contact p{
