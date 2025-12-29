@@ -5,6 +5,10 @@
     --light: #F5FEE3;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body {
     min-height: 100vh;
     background-color: var(--blue);
