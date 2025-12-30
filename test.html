@@ -102,7 +102,7 @@
     </header>
 
     <section id="about-me" class="aboutme">
-        <h2>About Me</h2>
+        <h2>About me</h2>
         <div class="aboutme-text">
             <img class="aboutme-photo" src="./images/photo_1.png" alt="picture of me">
             <p>
@@ -172,31 +172,35 @@
         </div>
     </section>
 
-    <section class="carousel">
-        <div>
-            <h2>Tyco's potioncart</h2>
-            <p>School project made in Blender</p>
-            <div class="img"><img src="./images/potioncart.webp" alt="Project potionkiosk"></div>
-        </div>
-        <div>
-            <h2>Zuiderbad interactive map</h2>
-            <p>School project made for a client</p>
-            <div class="img"><img src="./images/Zmap.webp" alt="Project Zuiderbad map" loading="lazy"></div>
-        </div>
-        <div>
-            <h2>Google doodle</h2>
-            <p>School project made in Figma/code</p>
-            <div class="img"><img src="./images/googledoodle.webp" alt="Project Google doodle" loading="lazy"></div>
-        </div>
-        <div>
-            <h2>Felipe Rodriguez</h2>
-            <p>Designer</p>
-            <div class="img"><img src="https://i.pravatar.cc/300?img=13" alt="Felipe Rodriguez" loading="lazy"></div>
-        </div>
-        <div>
-            <h2>Jonathon Simmons</h2>
-            <p>Back-End Developer</p>
-            <div class="img"><img src="https://i.pravatar.cc/300?img=15" alt="Jonathon Simmons" loading="lazy"></div>
+    <section aria-label="projects" class="projects" id="projects">
+        <h2>Projects</h2>
+        <p class="project-description">Behold, some of the projects I’ve worked on. Most of them I created on my own, while some were group efforts. Feel free to scroll and click any project to get more info about it.</p>
+        
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <h3>Tyco's potioncart</h3>
+                    <img src="./images/potioncart.webp" alt="Project potionkiosk">
+                    <p>School project made in Blender</p>
+                </li>
+                <li class="slide">
+                    <h3>Zuiderbad interactive map</h3>
+                    <img src="./images/Zmap.webp" alt="Project Zuiderbad map">
+                    <p>School project made for a client</p>
+                </li>
+                <li class="slide">
+                    <h3>Google doodle</h3>
+                    <img src="./images/googledoodle.webp" alt="Project Google doodle">
+                    <p>School project made in Figma/code</p>
+                </li>
+                <li class="slide">
+                    <h3>Sculpted character</h3>
+                    <img src="./images/sculpted_character_hor.webp" alt="Project sculpted character">
+                    <p>Small project made in Blender</p>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="contact" class="contact">

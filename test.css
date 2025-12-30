@@ -205,6 +205,15 @@ body {
     background-color: var(--light);
 }
 
+h2{
+    font-family: 'Jersey25', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    color: var(--light);
+    text-align: left;
+    margin: 0 0 40px 0;
+}
+
 /*about me section*/
 .aboutme {
     /* padding: 120px 30px 0px 30px; */
@@ -213,12 +222,12 @@ body {
     color: var(--light);
 }
 
-.aboutme h2 {
+/* .aboutme h2 {
     font-family: 'Audiowide', sans-serif;
     font-size: 3em;
     color: var(--light);
     text-align: left;
-}
+} */
 
 .aboutme-text {
     /* margin-left: auto;
@@ -326,40 +335,94 @@ body {
     margin-right: 10px;
 }
 
-/*projects section*/
-.carousel {
+.projects{
+    padding: 80px 12%;
+    /* text-align: center; */
+    color: var(--light);
+}
+
+.project-description{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.carousel{
+    width: 100%;
+    height: 22em;
     position: relative;
-    margin: 80px auto 120px auto;
-
-    --nav-btn-size: 40px;
-    --nav-btn-bg: rgb(15, 23, 43);
-    --nav-btn-txt: white;
-
-    --nav-marker-bg: 20px;
-    --nav-marker-bg: rgb(15, 23, 43);
-
-    width: min(calc(80% - 2rem), 700px);
-    padding-block: 2rem;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 250px;
-    gap: 0;
-
-    anchor-name: --carousel;
-
-    overflow-x: auto;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
-    overscroll-behavior-x: contain;
-    scroll-behavior: smooth;
 }
 
-.carousel::before,
-.carousel::after {
-    content: "";
+.carousel > ul{
+    list-style: none;
 }
 
-/* Items */
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: -1;
+    /* transition: opacity 500ms ease-in-out; */
+}
+
+.slide > img{
+    display: block;
+    object-position: center;
+}
+
+.slide h3{
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 1.8em
+}
+
+.slide p{
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 1.2em;
+}
+
+.slide img{
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.slide[data-active]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.carousel-button{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 3em;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green);
+    background-color: var(--dark);
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover{
+    background-color: var(--light);
+    
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+
+.carousel-button.next{
+    right: 1rem;
+}
+
 .carousel>div {
     position: relative;
     display: grid;
@@ -369,110 +432,8 @@ body {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 
-    /* nodig voor @container scroll-state(...) */
     container-type: scroll-state;
-}
-
-.carousel h2 {
-    grid-area: title;
-    /* margin: 1rem 0 0; */
-    color: var(--light);
-    font-family: 'inconsolata', monospace;
-    font-weight: 600;
-    font-size: 1.3rem;
-    /* white-space: nowrap; */
-    transition: 300ms ease-in-out;
-}
-
-.carousel p {
-    grid-area: desc;
-    margin: 0;
-    white-space: nowrap;
-    color: var(--light);
-    font-family: 'inconsolata', monospace;
-    font-weight: 600;
-    transition: 300ms ease-in-out;
-}
-
-.carousel .img {
-    grid-area: img;
-    width: 100%;
-    aspect-ratio: 5 / 3;
-    transform-origin: center;
-    transition: 300ms ease-in-out;
-}
-
-.carousel .img>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* “niet actief” (niet snapped) */
-@container not scroll-state(snapped: inline) {
-    .carousel h2 {
-        scale: .5;
-        opacity: .5;
-        translate: 0 -100px;
-    }
-
-    .carousel p {
-        scale: .5;
-        opacity: 0;
-    }
-
-    .carousel .img {
-        scale: .5;
-        opacity: .5;
-    }
-}
-
-/* ====== Scroll buttons ====== */
-.carousel::scroll-button(*) {
-    position: absolute;
-    position-anchor: --carousel;
-
-    width: 40px;
-    aspect-ratio: 1;
-    border: 0;
-    border-radius: 50%;
-    cursor: pointer;
-
-    display: grid;
-    place-content: center;
-
-    background: var(--dark);
-    color: var(--light);
-}
-
-.carousel::scroll-button(inline-start) {
-    content: "❮";
-    left: calc(anchor(left) - var(--nav-btn-size));
-}
-
-.carousel::scroll-button(inline-end) {
-    content: "❯";
-    right: calc(anchor(right) - var(--nav-btn-size));
-}
-
-.carousel::scroll-button(*):not(:disabled):hover,
-.carousel::scroll-button(*):not(:disabled):focus-visible {
-    opacity: 1;
-    scale: 1.1;
-}
-
-.carousel::scroll-button(*):focus-visible {
-    outline-color: var(--nav-color);
-    outline-offset: 4px;
-}
-
-.carousel::scroll-button(*):disabled {
-    opacity: .25;
-    cursor: default;
-}
-
-
-
+} */
 
 .contact {
     padding: 80px 30px;
@@ -679,7 +640,6 @@ body {
     .pixel-avatar {
         width: 260px;
         margin-bottom: -150px;
-        z-index: -1;
     }
 }
 
