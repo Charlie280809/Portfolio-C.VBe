@@ -24,4 +24,16 @@
       <lastmod>2025-09-29</lastmod>
       <priority>0.8</priority>
    </url>
+   <!-- Project sculpted character -->
+   <url>
+      <loc>https://portfoliocvbe.tech/project_sculpted_character.html</loc>
+      <lastmod>2025-09-29</lastmod>
+      <priority>0.8</priority>
+   </url>
+   <!-- Project hack the future -->
+   <url>
+      <loc>https://portfoliocvbe.tech/project_HTF2025.html</loc>
+      <lastmod>2025-09-29</lastmod>
+      <priority>0.5</priority>
+   </url>
 </urlset>
