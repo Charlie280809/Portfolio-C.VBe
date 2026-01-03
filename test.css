@@ -17,13 +17,6 @@ body {
 }
 
 @font-face {
-    font-family: 'Audiowide';
-    src: url('./fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Jersey25';
     src: url('./fonts/Jersey_25/Jersey25-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -251,7 +244,7 @@ h2{
 }
 
 .aboutme-skills h3 {
-    font-family: 'Audiowide', sans-serif;
+    font-family: 'JockeyOne', sans-serif;
     font-size: 1.6em;
     text-align: left;
 }
@@ -457,7 +450,6 @@ h2{
 }
 
 .contact h2 {
-    /* font-family: 'Audiowide', sans-serif; */
     font-family: 'Jersey25', sans-serif;
     font-weight: 400;
     font-size: 3em;
