@@ -44,9 +44,9 @@
         (function (w, d, e, u, f, l, n) {
             w[f] = w[f] || function () {
                 (w[f].q = w[f].q || [])
-                .push(arguments);
+                    .push(arguments);
             }, l = d.createElement(e), l.async = 1, l.src = u,
-            n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+                n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
         })
             (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
         ml('account', '1867124');
@@ -78,15 +78,22 @@
         <h1>Bubble popper game</h1>
         <div class="hero_div">
             <p>
-                A small bubble popper game made using only JavaScript and HTML5. Pop as many bubbles as you want, there is no timer or score limit!
+                A small bubble popper game made using only JavaScript and HTML5. Pop as many bubbles as you want, there
+                is no timer or score limit!
                 <br><br>
-                I created this game to practice my JavaScript skills some more. I followed a course on <a href="https://alison.com/course/interactive-games-using-html-5-and-javascript">Alison</a> to realise this project, so if you'd like to create your own version of this game, I highly recommend checking it out!
+                I created this game to practice my JavaScript skills some more. I followed a course on <a
+                    href="https://alison.com/course/interactive-games-using-html-5-and-javascript">Alison</a> to realise
+                this project, so if you'd like to create your own version of this game, I highly recommend checking it
+                out!
                 <br><br>
-                If you'd like, you can check out my code on <a href="https://github.com/Charlie280809/bubble-popper-game" target="_blank">GitHub</a> 
+                If you'd like, you can check out my code on <a
+                    href="https://github.com/Charlie280809/bubble-popper-game" target="_blank">GitHub</a>
                 <br>
                 and you can <a href="https://bubble-popper-game-xi.vercel.app/" target="_blank">play the game here</a>!
             </p>
-            <video autoplay loop class="hero_image" src="./images/bubblepopper_playthrough.mp4"></video>
+            <video autoplay loop muted playsinline class="hero_image">
+                <source src="./images/bubblepopper_playthrough.mp4" type="video/mp4">
+            </video>
             <div class="tools">
                 <p>Tools:</p>
                 <img src="./images/HTML.webp" alt="HTML">
@@ -94,7 +101,7 @@
             </div>
         </div>
     </header>
-    
+
     <!-- <section class="context">
         <h2>Oops, you've caught me!</h2>
         <p>I'm still working on this page. Come back soon!</p>
@@ -130,4 +137,5 @@
     </footer>
 </body>
 <script src="script.js"></script>
+
 </html>
