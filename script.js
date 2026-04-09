@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const bg = document.createElement("div");
     bg.dataset.usProject = "k5wkDeEZHty9tz3YHMpP";
     bg.style.cssText = "width:100%; height:110%; position:fixed; top:0; left:0; z-index:-1;";
+    // bg.style.cssText = "width:100%; height:100vh; position:absolute; top:0; left:0; z-index:-1;";
     document.body.prepend(bg);
 
     (function () {
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Also attach to the CTA button(s)
-    const ctaBTN = document.querySelector('.CTA-btn');
+    const ctaBTN = document.querySelector('.contact-btn');
     ctaBTN.addEventListener('click', (e) => smoothScrollToHash(ctaBTN, e));
     const logoLink = document.querySelector('.logoLink');
     logoLink.addEventListener('click', (e) => smoothScrollToHash(logoLink, e));
