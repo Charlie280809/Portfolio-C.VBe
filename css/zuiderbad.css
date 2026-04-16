@@ -255,8 +255,9 @@ h2 {
 }
 
 .tutorial video {
-    width: 40%;
-    /* height: auto; */
+    /* width: 40%; */
+    width: auto;
+    height: 80vh;
     border: 8px solid var(--dark);
     border-radius: 40px;
 }
@@ -508,7 +509,8 @@ h3 {
     }
 
     .tutorial video {
-        width: 30%;
+        /* width: 30%; */
+        border-radius: 20px;
     }
 
     .endproduct {
@@ -609,7 +611,7 @@ h3 {
     }
 
     .tutorial video {
-        width: 60%;
+        /* width: 60%; */
     }
 
     .before_after .changes {
