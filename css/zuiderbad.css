@@ -610,9 +610,9 @@ h3 {
         gap: 20px;
     }
 
-    .tutorial video {
-        /* width: 60%; */
-    }
+    /* .tutorial video {
+        width: 60%;
+    } */
 
     .before_after .changes {
         width: 90%;
